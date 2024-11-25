@@ -2,7 +2,7 @@
 All 110 episodes of Wizards of Waverly Place were examined using 28 variables. The variables examined in this code are “podcast,” “creatures,” “allusions,” “guest,” “rating,” and “seconds.”
 
 # Introduction
-To access and utilize the script, open "paranich.R", to access the data set open "data.csv", and to access the codebook open "codebook.pdf".
+To access and utilize the script, open "paranich.R", to access the data set open "data.csv", and to access the codebook open "codebook.pdf". Additionally, to access the plots created from RStudios, open "Box Plot of Allusions and Guests", "Scatter Plot of Ratings and Seconds for Search Results", and "Residuals Plot".
 
 # Data
 In this case, a simple random sample is not needed because we collected data on the entire show, both population size and sample size = 110.
