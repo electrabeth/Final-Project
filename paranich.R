@@ -77,6 +77,7 @@ ggplot(data, aes(x = rating, y = seconds)) +
   theme_minimal() +
   geom_vline(xintercept = mean_x, color = "red", lwd = 2, lty = 2) +
   geom_hline(yintercept = mean_y, color = "purple", lwd = 2, lty = 2)
+  geom_smooth(method = "lm", color = "green", lwd =2)
 
 # Create Residuals
 linear_relationship <- lm(data$rating ~ seconds, data = data)
