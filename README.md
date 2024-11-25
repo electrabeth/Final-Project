@@ -1,5 +1,5 @@
 # Final-Project
-For Sta215 (Fall 2024), all 110 episodes of Wizards of Waverly Place were examined using 28 variables. The variables examined in this code are “podcast,” “creatures,” “allusions,” “guest,” “rating,” and “seconds.”
+For STA215 (Fall 2024), all 110 episodes of Wizards of Waverly Place were examined using 28 variables. The variables examined in this code are “podcast,” “creatures,” “allusions,” “guest,” “rating,” and “seconds.”
 
 # Introduction
 To access and utilize the script, open "paranich.R", to access the data set open "data.csv", and to access the codebook open "codebook.pdf".
