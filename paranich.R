@@ -46,6 +46,11 @@ summary(data$seconds)
 # Contigency Table
 table(data$podcast , data$creatures)
 
+#Chi-Squared Test (Podcast & Creatures)
+chisq.test(data$podcast , data$creatures)
+result <- chisq.test(data$podcast , data$creatures)
+print(result)
+
 # BOX PLOT
 ggplot(data, aes(x = guest, y = allusions)) +
   geom_boxplot() +
