@@ -1,19 +1,19 @@
 # Final-Project
 The final project in STA215 is about data collected from Wizards of Waverly Place and analysis of data collected. 
 
-#Set working directory
+# Set working directory
 setwd("H:/sta215")
 
 data <- read.csv("raw_data.csv")
 
-#Load packages
+# Load packages
 library(readr)
 library(dplyr)
 library(haven)
 library(psych)
 library(ggplot2)
 
-#Descriptive Statistics
+# Descriptive Statistics
 mean(data$podcast)
 mean(data$creatures)
 mean(data$allusions)
@@ -57,7 +57,7 @@ ggplot(data, aes(x = guest, y = allusions)) +
        y = "Allusions") +
   theme_minimal()
 
-#Scatter Plot
+# Scatter Plot
 ggplot(data, aes(x = rating, y = seconds)) +
   geom_point(color = "blue", size = 3) +
   ggtitle("Scatter Plot for Ratings and Seconds for Search Results") +
@@ -65,7 +65,7 @@ ggplot(data, aes(x = rating, y = seconds)) +
   ylab("Seconds") +
   theme_minimal() 
 
-#Create Residuals
+# Create Residuals
 linear_relationship <- lm(data$rating ~ seconds, data = data)
 summary(linear_relationship)
 
