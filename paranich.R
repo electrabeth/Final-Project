@@ -60,7 +60,9 @@ ggplot(data, aes(x = guest, y = allusions)) +
   theme_minimal()
 
 #ANOVA test
-aov(seconds ~ rating, data)
+aov(seconds ~ rating, data = data)
+anova_results <- aov(seconds ~ rating, data = data)
+summary(anova_results)
 
 # Scatter Plot
 ggplot(data, aes(x = rating, y = seconds)) +
