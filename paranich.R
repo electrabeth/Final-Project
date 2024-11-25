@@ -64,13 +64,19 @@ aov(seconds ~ rating, data = data)
 anova_results <- aov(seconds ~ rating, data = data)
 summary(anova_results)
 
-# Scatter Plot
+#Calculate Mean lines
+mean_x <- mean(data$rating) 
+mean_y <- mean(data$seconds) 
+
+#Scatter Plot
 ggplot(data, aes(x = rating, y = seconds)) +
   geom_point(color = "blue", size = 3) +
   ggtitle("Scatter Plot for Ratings and Seconds for Search Results") +
   xlab("Ratings") +
   ylab("Seconds") +
-  theme_minimal() 
+  theme_minimal() +
+  geom_vline(xintercept = mean_x, color = "red", lwd = 2, lty = 2) +
+  geom_hline(yintercept = mean_y, color = "purple", lwd = 2, lty = 2)
 
 # Create Residuals
 linear_relationship <- lm(data$rating ~ seconds, data = data)
