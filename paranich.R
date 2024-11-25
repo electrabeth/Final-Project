@@ -67,4 +67,4 @@ linear_relationship <- lm(data$rating ~ seconds, data = data)
 summary(linear_relationship)
 
 plot(data$rating, residuals(linear_relationship))
-abline(h = 0, color)
+abline(h = 0)
