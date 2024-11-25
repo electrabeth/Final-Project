@@ -4,7 +4,7 @@ All 110 episodes of Wizards of Waverly Place were examined using 28 variables. T
 # Introduction
 
 # Data
-The sample size was all 110 episodes, and no simple random sample was needed, becuase we did the whole population size.
+In this case, a simple random sample is not needed because we collected data on the entire show, both population size and sample size = 110.
 
 # Operationalization 
 “Podcast” is a qualitative dummy variable which examines if the episode had a corresponding podcast episode, 1 = yes and 0=no.
