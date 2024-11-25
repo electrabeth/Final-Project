@@ -79,6 +79,10 @@ ggplot(data, aes(x = rating, y = seconds)) +
   geom_hline(yintercept = mean_y, color = "purple", lwd = 2, lty = 2)
   geom_smooth(method = "lm", color = "green", lwd =2)
 
+#Linear Regression
+model <- lm(seconds ~ rating, data = data)
+summary(model)
+
 # Create Residuals
 linear_relationship <- lm(data$rating ~ seconds, data = data)
 summary(linear_relationship)
