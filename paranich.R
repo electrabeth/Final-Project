@@ -59,6 +59,9 @@ ggplot(data, aes(x = guest, y = allusions)) +
        y = "Allusions") +
   theme_minimal()
 
+#ANOVA test
+aov(seconds ~ rating, data)
+
 # Scatter Plot
 ggplot(data, aes(x = rating, y = seconds)) +
   geom_point(color = "blue", size = 3) +
