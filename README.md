@@ -1,5 +1,5 @@
 # Final-Project
-The final project in STA215 is about data collected from Wizards of Waverly Place and analysis of data collected. 
+28 variables of data were collected on all 110 episodes of Wizards of Waverly Place. In this code, the variables Podcast, Creatures, Allusions, Guest, Rating, and Seconds are examined.
 
 # Set working directory
 setwd("H:/sta215")
