@@ -61,3 +61,10 @@ ggplot(data, aes(x = rating, y = seconds)) +
   xlab("Ratings") +
   ylab("Seconds") +
   theme_minimal() 
+
+# Create Residuals
+linear_relationship <- lm(data$rating ~ seconds, data = data)
+summary(linear_relationship)
+
+plot(data$rating, residuals(linear_relationship))
+abline(h = 0, color)
