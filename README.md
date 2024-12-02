@@ -18,4 +18,4 @@ In this case, a simple random sample is not needed because we collected data on 
 
 “Rating” is a continuous quantitative variable which measures the rating in stars such as 4.9, 5.0, 5.1, etc….
 
-“seconds” is a continuous quantitative variable which examines how long google took to produce search results from the variable “search” and is measures as 0.1, 0.2, 0.3, etc…. 
+“Seconds” is a continuous quantitative variable which examines how long google took to produce search results from the variable “search” and is measures as 0.1, 0.2, 0.3, etc…. 
