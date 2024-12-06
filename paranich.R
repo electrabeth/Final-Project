@@ -84,6 +84,7 @@ ggplot(data, aes(x = rating, y = seconds)) +
 
 #Calculate the Correlation Coefficient
 cor(data$rating, data$seconds, method = "pearson")
+cor.test(data$rating, data$seconds)
 
 #Linear Regression
 model <- lm(seconds ~ rating, data = data)
