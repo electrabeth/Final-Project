@@ -82,6 +82,9 @@ ggplot(data, aes(x = rating, y = seconds)) +
   geom_hline(yintercept = mean_y, color = "purple", lwd = 2, lty = 2)
   geom_smooth(method = "lm", color = "green", lwd =2)
 
+#Calculate the Correlation Coefficient
+cor(data$rating, data$seconds, method = "pearson")
+
 #Linear Regression
 model <- lm(seconds ~ rating, data = data)
 summary(model)
